@@ -8,10 +8,10 @@ pygame.init()
 SCREEN = pygame.display.set_mode((1050,550))
 pygame.display.set_caption("Home")
 
-BG = pygame.image.load("tt10.jpeg")
+BG = pygame.image.load("HomeScreenImage.jpeg")
 
 def get_font(size): # Returns Press-Start-2P in the desired size
-    return pygame.font.Font("assets/font.ttf", size)
+    return pygame.font.Font("font.ttf", size)
 
 def play():
     WIDTH = 600
@@ -290,11 +290,11 @@ def main_menu():
         MENU_TEXT = get_font(30).render("", True, "#FFFFFF")
         MENU_RECT = MENU_TEXT.get_rect(center=(400,50))
 
-        PLAY_BUTTON = Button(image=pygame.image.load("Options Rect1.png"), pos=(750,190), 
+        PLAY_BUTTON = Button(image=pygame.image.load("RectangleImage.png"), pos=(750,190), 
                             text_input="PLAY GAME", font=get_font(20), base_color="#000000", hovering_color="blue")
-        OPTIONS_BUTTON = Button(image=pygame.image.load("Options Rect1.png"), pos=(750, 320), 
+        OPTIONS_BUTTON = Button(image=pygame.image.load("RectangleImage.png"), pos=(750, 320), 
                             text_input="DESCRIPTION", font=get_font(20), base_color="#000000", hovering_color="blue")
-        QUIT_BUTTON = Button(image=pygame.image.load("Options Rect1.png"), pos=(750, 450), 
+        QUIT_BUTTON = Button(image=pygame.image.load("RectangleImage.png"), pos=(750, 450), 
                             text_input="QUIT", font=get_font(20), base_color="#000000", hovering_color="blue")
 
         SCREEN.blit(MENU_TEXT, MENU_RECT)
